@@ -13,7 +13,7 @@ public class TryCountValidator {
 
     private static void validateNumeric(String tryCountInput) {
         if (!isNumeric(tryCountInput)) {
-            throw new IllegalArgumentException("시도 횟수는 숫자만 입력할 수 있습니다.");
+            throw new IllegalArgumentException(ErrorMessage.TRYCOUnT_NOT_NUMERIC.getMessage());
         }
     }
 
@@ -23,7 +23,7 @@ public class TryCountValidator {
 
     private static void validatePositive(String tryCountInput) {
         if (!isPositive(tryCountInput)) {
-            throw new IllegalArgumentException("시도 횟수는 1 이상이어야 합니다.");
+            throw new IllegalArgumentException(ErrorMessage.TRYCOUNT_NOT_POSITIVE.getMessage());
         }
     }
 
