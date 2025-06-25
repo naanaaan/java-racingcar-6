@@ -12,10 +12,10 @@
 - [ ] 사용자가 입력하는 값은 `camp.nextstep.edu.missionutils.Console`의 `readLine()`을 활용한다.
 
 ### 🔢 시도 횟수 입력
-- [ ] 경주 시도 횟수를 정수로 입력받는다.
+- [x] 경주 시도 횟수를 정수로 입력받는다.
+  - [x] 사용자가 입력하는 값은 `camp.nextstep.edu.missionutils.Console`의 `readLine()`을 활용한다.
 - [ ] 입력 값은 **1 이상의 정수**여야 한다.
   - [ ] 0 이하 또는 숫자가 아닐 경우 → `IllegalArgumentException`가 발생한다.
-- [ ] 사용자가 입력하는 값은 `camp.nextstep.edu.missionutils.Console`의 `readLine()`을 활용한다.
 
 ---
 
