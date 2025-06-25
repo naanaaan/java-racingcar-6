@@ -53,18 +53,20 @@
 ```
 src/
 ├── main/java/racingcar/
-│   ├── Application.java            
+│   ├── Application.java
 │   ├── controller/
-│   │   └── RaceGameController.java  
+│   │   └── RaceGameController.java
 │   ├── domain/
-│   │   ├── Car.java                 
-│   │   ├── Race.java             
-│   │   ├── MoveStrategy.java       
-│   │   └── RandomMoveStrategy.java   
+│   │   ├── Car.java
+│   │   ├── Race.java
+│   │   ├── MoveStrategy.java
+│   │   └── RandomMoveStrategy.java
+│   ├── validate/
+│   │   ├── TryCountValidator.java
+│   │   └── ErrorMessage.java
 │   └── view/
-│       ├── InputView.java           
-│       └── OutputView.java           
-
+│       ├── InputView.java
+│       └── OutputView.java
 
 ```
 
