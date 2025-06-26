@@ -1,5 +1,7 @@
 package racingcar.domain;
 
+import racingcar.validate.CarNameValidator;
+
 public class Car {
     public static final int MIN_NAME_LENGTH = 1;
     public static final int MAX_NAME_LENGTH = 5;
@@ -11,6 +13,7 @@ public class Car {
     private int position;
 
     public Car(String name, MoveStrategy strategy) {
+        CarNameValidator.validate(name);
         this.name = name;
         this.position = START_POSITION;
         this.strategy = strategy;
