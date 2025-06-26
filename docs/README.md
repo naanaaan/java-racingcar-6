@@ -63,6 +63,7 @@ src/
 │   │   └── RandomMoveStrategy.java
 │   ├── validate/
 │   │   ├── TryCountValidator.java
+│   │   ├── CarNameValidator.java
 │   │   └── ErrorMessage.java
 │   └── view/
 │       ├── InputView.java
