@@ -5,11 +5,11 @@
 ## 입력 처리
 
 ### 🚘 자동차 이름 입력
-- [ ] 쉼표(`,`)로 구분된 이름들을 입력받는다.
-- [ ] 각 이름은 **1자 이상, 5자 이하**이어야 한다.
-  - [ ] 빈 문자열 또는 공백일 경우 → `IllegalArgumentException`가 발생한다.
-  - [ ] 5자 초과시 → `IllegalArgumentException`가 발생한다.
-- [ ] 사용자가 입력하는 값은 `camp.nextstep.edu.missionutils.Console`의 `readLine()`을 활용한다.
+- [x] 쉼표(`,`)로 구분된 이름들을 입력받는다.
+- [x] 각 이름은 **1자 이상, 5자 이하**이어야 한다.
+  - [x] 빈 문자열 또는 공백일 경우 → `IllegalArgumentException`가 발생한다.
+  - [x] 5자 초과시 → `IllegalArgumentException`가 발생한다.
+- [x] 사용자가 입력하는 값은 `camp.nextstep.edu.missionutils.Console`의 `readLine()`을 활용한다.
 
 ### 🔢 시도 횟수 입력
 - [x] 경주 시도 횟수를 정수로 입력받는다.
