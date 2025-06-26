@@ -1,29 +1,32 @@
 package racingcar.domain;
 
 public class Car {
-	private static int START_POSITION = 0;
+    public static final int MIN_NAME_LENGTH = 1;
+    public static final int MAX_NAME_LENGTH = 5;
 
-	private String name;
-	private MoveStrategy strategy;
-	private int position;
+    private static final int START_POSITION = 0;
 
-	public Car(String name, MoveStrategy strategy) {
-		this.name = name;
-		this.position = START_POSITION;
-		this.strategy = strategy;
-	}
+    private final String name;
+    private final MoveStrategy strategy;
+    private int position;
 
-	public void move() {
-		if (strategy.isMovable()) {
-			position++;
-		}
-	}
+    public Car(String name, MoveStrategy strategy) {
+        this.name = name;
+        this.position = START_POSITION;
+        this.strategy = strategy;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public void move() {
+        if (strategy.isMovable()) {
+            position++;
+        }
+    }
 
-	public int getPosition() {
-		return position;
-	}
+    public String getName() {
+        return name;
+    }
+
+    public int getPosition() {
+        return position;
+    }
 }
