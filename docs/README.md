@@ -20,8 +20,8 @@
 ---
 
 ##  게임 라운드 실행
-- [ ] 사용자가 입력한 시도 횟수만큼 라운드를 반복한다.
-- [ ] 매 라운드마다 각 자동차에 대해 이동 여부를 판단한다.
+- [x] 사용자가 입력한 시도 횟수만큼 라운드를 반복한다.
+- [x] 매 라운드마다 각 자동차에 대해 이동 여부를 판단한다.
   - [x] 전진 조건이 '참'이면 전진한다.
   - [x] 무작위 값이 **4 이상**일 경우 자동차는 전진한다.
      - [x] Random 값 추출은 `camp.nextstep.edu.missionutils.Randoms`의 `pickNumberInRange()`를 활용한다.
@@ -58,6 +58,7 @@ src/
 │   ├── domain/
 │   │   ├── Car.java
 │   │   ├── CarDto.java
+│   │   ├── CarFactory.java
 │   │   ├── Race.java
 │   │   ├── MoveStrategy.java
 │   │   └── RandomMoveStrategy.java
@@ -70,6 +71,7 @@ src/
 │   └── view/
 │       ├── InputView.java
 │       └── OutputView.java
+
 
 ```
 
