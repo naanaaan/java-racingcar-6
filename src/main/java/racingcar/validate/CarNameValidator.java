@@ -3,6 +3,8 @@ package racingcar.validate;
 import racingcar.domain.Car;
 
 public class CarNameValidator {
+    private CarNameValidator() {};
+
     public static void validate(String carName) {
         validateNotBlank(carName);
         validateLength(carName);
