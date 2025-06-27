@@ -57,9 +57,12 @@ src/
 │   │   └── RaceGameController.java
 │   ├── domain/
 │   │   ├── Car.java
+│   │   ├── CarDto.java
 │   │   ├── Race.java
 │   │   ├── MoveStrategy.java
 │   │   └── RandomMoveStrategy.java
+│   ├── mapper/
+│   │   └── CarMapper.java
 │   ├── validate/
 │   │   ├── TryCountValidator.java
 │   │   ├── CarNameValidator.java
