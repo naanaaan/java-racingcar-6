@@ -50,4 +50,28 @@ public class OutputViewTest {
         }
         return car;
     }
+
+    @DisplayName("우승자가 콘솔 출력에 포함되어야 한다.")
+    @Test
+    void shouldContainWinnerInConsoleOutput() {
+        List<CarDto> winner = List.of(new CarDto("bom", 3));
+
+        OutputView.printWinners(winner);
+
+        String result = outputBuffer.toString();
+        assertThat(result).contains("최종 우승자 : bom");
+    }
+
+    @DisplayName("여러 명의 우승자가 콘솔 출력에 포함되어야 한다.")
+    @Test
+    void shouldContainWinnersInConsoleOutput() {
+        List<CarDto> winners = List.of(
+                new CarDto("pobi", 3),
+                new CarDto("jun", 3));
+
+        OutputView.printWinners(winners);
+
+        String result = outputBuffer.toString();
+        assertThat(result).contains("최종 우승자 : pobi, jun");
+    }
 }
