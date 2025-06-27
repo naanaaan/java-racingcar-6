@@ -1,5 +1,6 @@
 package racingcar.domain;
 
+import java.util.Collections;
 import java.util.List;
 
 public class Race {
@@ -30,5 +31,9 @@ public class Race {
                 .mapToInt(Car::getPosition)
                 .max()
                 .getAsInt();
+    }
+
+    public List<Car> getCars() {
+        return Collections.unmodifiableList(cars);
     }
 }

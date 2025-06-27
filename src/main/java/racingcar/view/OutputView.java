@@ -25,6 +25,7 @@ public class OutputView {
         for (CarDto car : cars) {
             printCarProgress(car);
         }
+        System.out.println();
     }
 
     private static void printCarProgress(CarDto carDto) {
