@@ -6,6 +6,8 @@ public class TryCountValidator {
     private static final int MIN_TRY_COUNT = 1;
     private static final Pattern NUMERIC_REGEX = Pattern.compile("-?\\d+");
 
+    private TryCountValidator() {};
+
     public static void validatePositiveNumeric(String tryCountInput) {
         validateNumeric(tryCountInput);
         validatePositive(tryCountInput);
