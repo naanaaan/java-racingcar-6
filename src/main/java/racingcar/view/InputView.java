@@ -10,6 +10,8 @@ import racingcar.validate.TryCountValidator;
 public class InputView {
     private static final String CAR_NAME_DELIMITER = ",";
 
+    private InputView() {};
+
     public static List<String> readCarNames() {
         String carNames = Console.readLine();
         List<String> parsedCarNames = Arrays.stream(carNames.split(CAR_NAME_DELIMITER))
