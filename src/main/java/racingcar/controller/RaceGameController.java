@@ -42,7 +42,7 @@ public class RaceGameController {
     }
 
     private void runRace(Race race, int tryCount) {
-        OutputView.printResult();
+        OutputView.printRaceResultHeader();
         for (int i = 0; i < tryCount; i++) {
             race.moveAll();
             OutputView.printCarsRoundResult(toCarDtos(race.getCars()));

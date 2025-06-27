@@ -17,7 +17,7 @@ public class OutputView {
         System.out.println("시도할 회수는 몇회인가요?");
     }
 
-    public static void printResult() {
+    public static void printRaceResultHeader() {
         System.out.println("실행결과");
     }
 
@@ -41,8 +41,6 @@ public class OutputView {
     }
 
     private static String formatWinnerNames(List<CarDto> winners) {
-        return winners.stream()
-                .map(CarDto::getName)
-                .collect(Collectors.joining(WINNER_DELIMITER));
+        return winners.stream().map(CarDto::getName).collect(Collectors.joining(WINNER_DELIMITER));
     }
 }
